@@ -173,4 +173,10 @@ print( "value => " + add( 1 , 2 ) );
 
 ---
 
+## References
+
+http://www.hpcs.cs.tsukuba.ac.jp/~msato/lecture-note/comp-lecture/note1.html
+
+---
+
 Explanation end
