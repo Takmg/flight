@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="flight\src\flight.cpp">
+      <Filter>flight\src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="flight\src\flight_loader.cpp" />
+    <ClCompile Include="flight\src\flight_tokenize.cpp" />
+    <ClCompile Include="flight\src\flight_tree_generator.cpp" />
+    <ClCompile Include="flight\src\flight_data.cpp" />
+    <ClCompile Include="flight\src\flight_vm.cpp" />
+    <ClCompile Include="flight\src\flight_prepare_vmdata.cpp" />
+    <ClCompile Include="flight\src\flight_debug.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="flight\include\flight.h">
+      <Filter>flight\include</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="flight\include\common.h">
+      <Filter>flight\include</Filter>
+    </ClInclude>
+    <ClInclude Include="flight\include_inner\flight_loader.h" />
+    <ClInclude Include="flight\include_inner\flight_tokenize.h" />
+    <ClInclude Include="flight\include\flight_type.h" />
+    <ClInclude Include="flight\include_inner\flight_tree_generator.h" />
+    <ClInclude Include="flight\include_inner\flight_data.h" />
+    <ClInclude Include="flight\include_inner\flight_types.h" />
+    <ClInclude Include="flight\include_inner\flight_vm.h" />
+    <ClInclude Include="flight\include_inner\flight_prepare_vmdata.h" />
+    <ClInclude Include="flight\include_inner\flight_debug.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="flight">
+      <UniqueIdentifier>{56f321b2-02e6-4212-b61f-42ec1002a20e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flight\include">
+      <UniqueIdentifier>{ac6b28df-1dbd-498b-b6f6-45a3478e7129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flight\src">
+      <UniqueIdentifier>{392137be-4d85-4bcd-b6ca-0241ffc3242c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flight\include_inner">
+      <UniqueIdentifier>{1b067f49-2290-454c-b76b-73d28589faa3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

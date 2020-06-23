@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="script">
+      <UniqueIdentifier>{bd0d20b2-2225-4508-821c-ebd728fa14c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="flight-test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="script\test.f">
+      <Filter>script</Filter>
+    </None>
+  </ItemGroup>
+</Project>
