@@ -71,12 +71,15 @@ var val1 = 10 , val2 = 20; // multiple declare
 ```cpp
 var a = 10;
 if( a == 10 ){ /* execute */ }
+else if( a != 20 ) {}
+else if( a > 10 ) {}
+else {}
 ```
 
 ### for
 
 ```cpp
-for( var i = 0 ; i < 10 ; i++ ) { /* execute */ }
+for( var i = 0 ; i < 10 ; i += 1 ) { /* execute */ }
 ```
 
 ### while 
