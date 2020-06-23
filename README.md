@@ -19,11 +19,11 @@ void main()
 
     do {
         // load script file
-        if(!f.load_file("script.f")){ return; }
-        if(!f.load_file("script2.f")){ return; }
+        if(!f.load_file("script.f")){ break; }
+        if(!f.load_file("script2.f")){ break; }
 
         // call when all scripts are loaded
-        if(!f.load_complete()){ return; }
+        if(!f.load_complete()){ break; }
         
         // script execution
         f.exec();
@@ -151,11 +151,11 @@ void main()
 
     do {
         // load script file
-        if(!f.load_file("script.f")){ return; }
-        if(!f.load_file("script2.f")){ return; }
+        if(!f.load_file("script.f")){ break; }
+        if(!f.load_file("script2.f")){ break; }
 
         // call when all scripts are loaded
-        if(!f.load_complete()){ return; }
+        if(!f.load_complete()){ break; }
 
         // !!! add embedded function
         if (!f.register_function("add", add)) { break; }
