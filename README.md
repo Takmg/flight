@@ -40,7 +40,7 @@ void main()
 ---
 
 ## script
-See'flight-test/script/test.f' for a sample script.   
+See 'flight-test/script/test.f' for a sample script.   
 It can be written like C language. 
 
 The details are described below.  
@@ -56,6 +56,7 @@ var str2 = str + "aaaa";
 var ch = 'a';
 var oct = 0123;
 var hex = 0xff1;
+var val1 = 10 , val2 = 20; // multiple declare
 ```
 
 ### comment
@@ -111,7 +112,15 @@ yield returns processing to host.
 
 ```
 yield;
-yield 2;
+yield 2; // Can be picked up by the host.
+```
+
+##### How to receive the yield value on the host side
+
+```cpp
+flight_variable var;
+f.get_exec_data(var);
+printf("last data => %s\n", var.value.c_str());  // yield 2 is returned 2, yield is returned ""
 ```
 
 ### function pointer
@@ -123,8 +132,6 @@ var fp_mul = mul;
 
 fp_prt( fp_mul( 2 , 3 ) );
 ```
-
-
 
 ---
 
@@ -143,7 +150,6 @@ void add(flight_variable& ret_var, const flight_variable& arg1, const flight_var
     ret_var.type = flight_data_type::FDT_VARNUMBER;
     return;
 }
-
 
 void main()
 {
