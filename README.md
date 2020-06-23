@@ -130,7 +130,7 @@ printf("last data => %s\n", var.value.c_str());  // yield 2 is returned 2, yield
 
 ```cpp
 func mul( var a , var b ) { return a * b; }
-var fp_prt = print
+var fp_prt = print;
 var fp_mul = mul;
 
 fp_prt( fp_mul( 2 , 3 ) );
@@ -175,7 +175,7 @@ void main()
 
 #### script 
 
-```
+```cpp
 // call host function
 print( "value => " + add( 1 , 2 ) );
 ```
